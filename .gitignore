@@ -7,3 +7,5 @@
 *.toc
 .vscode
 *.fdb_latexmk
+*.bbl
+*.blg
