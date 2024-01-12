@@ -1,6 +1,6 @@
-\documentclass[12pt, twoside, openany]{book}
+%\documentclass[12pt, twoside, openany]{book}
 %chktex-file 1
-%\documentclass[12pt, oneside]{book}  % jednostranna tlac
+\documentclass[12pt, oneside]{book}  % jednostranna tlac
 \linespread{1.25} % hodnota 1.25 by mala zodpovedat 1.5 riadkovaniu
 \pagestyle{plain}
 % -------------------
@@ -62,6 +62,8 @@
 \def\mfodbor{18. Informatika}
 \def\program{Aplikovaná informatika}
 \def\mfpracovisko{Katedra aplikovanej informatiky}
+
+\setcounter{secnumdepth}{2}
 
 \begin{document}
 \frontmatter
@@ -234,6 +236,10 @@
 
 
 \mainmatter
+
+\input{uvod}
+\input{rytmicke-pc-hry/rytmicke-pc-hry}
+\input{zaver}
 
 
 %main content 
