@@ -32,8 +32,7 @@ https://github.com/xmasny/beatsaber-map-generator (je potrebne požiadať o prí
 
 ## Informácie o datasete
 
-
-pocet songov:  145831
+- pocet songov:  145831
 - Dva priečinky data (raw dáta) a dataset (generovane a preprocesovane dáta)
 
 ![velkost datasetu](<images/velkost datasetu.png>)
@@ -57,4 +56,3 @@ pocet songov:  145831
 - [Beat Saber Wiki](https://bsmg.wiki/)
 - [Dance Dance Convolution](https://arxiv.org/pdf/1703.06891.pdf)
 - [Procedural Content Generation of Rhythm Games Using Deep Learning Methods](https://inria.hal.science/hal-03652042/document)
-
