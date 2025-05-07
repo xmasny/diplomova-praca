@@ -9,3 +9,5 @@
 *.fdb_latexmk
 *.bbl
 *.blg
+*.pdf
+*.gz
