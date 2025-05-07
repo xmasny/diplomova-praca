@@ -37,7 +37,7 @@ Poslednému zmieňovanému typu a hre \textit{Beat Saber} sa budeme venovať v t
 
 \section{Hra Beat Saber}\label{sec:beat_saber}
 
-Beat Saber je hra pre virtuálnu realitu, ktorá bola vyvinutá a vydaná českým herným štúdiom Beat Games. Hra bola v predbežnom prístupe vydaná v máji 2018 a neskôr v máji 2019 bola vydaná ako plná verzia. Hra je dostupná pre platformy PlayStation 4, Windows, Meta Quest a ďalšie. Hráč používa ovládače pre virtuálnu realitu na ovládanie dvoch svetelných mečov, ktoré sú prednastavené na červenú a modrú farbu pre ľavú a pravú ruku. \cite{sutrich2020beatsaber}
+Beat Saber je hra pre virtuálnu realitu, ktorá bola vyvinutá a vydaná českým herným štúdiom Beat Games. Hra bola v predbežnom prístupe vydaná v máji 2018 a neskôr v máji 2019 bola vydaná ako plná verzia. Hra je dostupná pre platformy PlayStation 4, Windows, Meta Quest a ďalšie. Hráč používa ovládače pre virtuálnu realitu na ovládanie dvoch svetelných mečov, ktoré sú prednastavené na červenú a modrú farbu pre ľavú a pravú ruku \cite{sutrich2020beatsaber}.
 
 V každej pesničke hra hráčovi predkladá postupnosť približujúcich sa blokov súčasne s rytmom hudby, umiestnených v jednej z 12 možných pozícií na mriežke 4×3. Každý blok môže byť označený šípkou, ktorá naznačuje jednu z ôsmich možných smerov, ktorým musí byť blok správne pretnutý. Existujú aj bloky s bodkami namiesto šipiek, ktoré hráči môžu zasiahnuť z akéhokoľvek smeru. Okrem toho sa objavujú aj bomby, ktoré hráč nesmie zasiahnuť, a prekážky v podobe približujúcich sa stien, ktorým sa je potrebné vyhnúť hlavou.
 
@@ -67,7 +67,7 @@ Jedným z kľúčových prvkov, ktorý prispieva k úspechu tejto hry, sú chart
 
 \subsubsection{Kľúčové Aspekty Tvorby Chart Súborov}
 
-Tvorba chart súborov je veľmi náročný proces, ktorý vyžaduje veľa času a ale ak skúseností. Chart súbory musia byť vytvorené tak, aby boli zábavné a zároveň výzvou pre hráčov. Tvorcovia musia zvážiť niekoľko kľúčových aspektov, aby sa zabezpečilo, že ich chart súbory budú zábavné a zároveň výzvou pre hráčov. Tu sú niektoré z týchto aspektov:
+Tvorba chart súborov je veľmi náročný proces, ktorý vyžaduje veľa času a ale ak skúseností. Tvorcovia musia zvážiť niekoľko kľúčových aspektov, aby sa zabezpečilo, že ich chart súbory budú zábavné a zároveň výzvou pre hráčov. Tu sú niektoré z týchto aspektov:
 
 \begin{itemize}
 \item \textbf{Priraďovanie Beatov a Blokov} – Tvorcovia musia zvážiť, ktoré beaty v hudbe budú priradené k blokom. Všeobecne platí, že beaty, ktoré sú v hudbe výraznejšie, by mali byť priradené k blokom. 
@@ -93,31 +93,31 @@ Hlbokú neurónovú sieť z Obr. \ref{fig:neuron} môžeme formálne definovať 
 
 \begin{equation}
 \begin{split}
-  f(x_0) = W_0 x + b_0 \\
-  f(x_{l+1}) = W_{l+1} g(x_l) + b_{l+1} \\  
+  f(\vec{x}_0) = W_0 \vec{x} + \vec{b}_0 \\
+  f(\vec{x}_{l+1}) = W_{l+1} g(\vec{x}_l) + \vec{b}_{l+1}, \\  
 \end{split}
 \end{equation}
 
-kde $x$ je vstupná hodnota a $x_l$ od nuly sú aktivácie v jednotlivých vrstvách, $W_l$ označuje váhy vo vrstve $l$ a $b_l$ je bias vo vrstve $l$ a $g$ je aktivačná funkcia.
+\noindent kde $\vec{x}$ je vstupný vektor a $\vec{x}_l$ od nuly sú aktivácie v jednotlivých vrstvách, $W_l$ označuje maticu váh vo vrstve $l$ a $\vec{b}_l$ je bias vektor vo vrstve $l$ a $g$ je aktivačná funkcia.
 
 \subsection{Aktivačné Funkcie} \label{sec:aktivacne_funkcie}
 
-Aktivačná funkcia podľa \cite{Goodfellow-et-al-2016} pridáva do neurónovej siete nelinearitu, čo neurónovej sieti umožňuje aproximovať veľkú triedu funkcií. Medzi známe aktivačné funkcie patria napríklad sigmoid, hyperbolický tangens a ReLU (Rektifikovaná lineárna jednotka). Sigmoid je definovaný predpisom \cite{Goodfellow-et-al-2016}:
+Aktivačná funkcia podľa \cite{Goodfellow-et-al-2016} pridáva do neurónovej siete nelinearitu, čo neurónovej sieti umožňuje aproximovať veľkú triedu funkcií. Medzi známe aktivačné funkcie patria napríklad sigmoid, hyperbolický tangens a ReLU (Rektifikovaná lineárna jednotka). Sigmoid je definovaný predpisom:
 
 \begin{equation}
-\sigma(x) = \frac{1}{1 + e^{-x}}
+\sigma(x) = \frac{1}{1 + e^{-x}}.
 \end{equation}
 
-Hyperbolický tangens je definovaný predpisom \cite{Goodfellow-et-al-2016}:
+Hyperbolický tangens je definovaný predpisom:
 
 \begin{equation}
-f(x) = tanh(x)
+f(x) = tanh(x).
 \end{equation}
 
-ReLU je definovaný predpisom \cite{Goodfellow-et-al-2016}:
+ReLU je definovaný predpisom:
 
 \begin{equation}
-f(x) = max(0, x)
+f(x) = max(0, x).
 \end{equation}
 
 Z pohľadu vlastností jednotlivých spomenutých aktivačných funkcií sa najčastejšie odporúča používať aktivačná funkcia ReLU. ReLU nemení veľkosť vstupu a medzi jej výhody patrí napríklad efektívnosť jej výpočtu.
@@ -129,37 +129,43 @@ Cieľom stratovej funkcie je umožniť trénovanie neurónovej siete v nami zvol
 Podľa článku \cite{takada2023genelive}, kde sa autori zaoberajú podobným problémom ako my, použili ako stratovú funkciu Binary Cross-Entropy (BCE). BCE je definovaná predpisom podľa \cite{Yaoshiang2020ce}:
 
 \begin{equation}
-  J_{bce} = -\frac{1}{M}\sum_{m=1}^{M} \left[ y_{m} \log\left( h_{\theta}(x_{m}) \right) + (1 - y_{m}) \log\left( 1 - h_{\theta}(x_{m}) \right) \right]
+  J_{bce} = -\frac{1}{M}\sum_{m=1}^{M} \left[ y_{m} \log\left( h_{\theta}(x_{m}) \right) + (1 - y_{m}) \log\left( 1 - h_{\theta}(x_{m}) \right) \right],
 \end{equation}
 
-kde $M$ je počet trénovacich dát, $y_{m}$ je požadovaná hodnota, $x_m$ je vstupná hodnota a $h_{\theta}$ je model s váhami neurónovej siete $\theta$.
+\noindent kde $M$ je počet trénovacich dát, $y_{m}$ je požadovaná hodnota v rozmedzí 0,1, $x_m$ je vstupná hodnota a $h_{\theta}$ je model s váhami neurónovej siete $\theta$.
 
 V našom prípade budeme používať ako stratovú funkciu Categorical (kategorickú) Cross-Entropy (CCE). CCE je definovaná predpisom podľa \cite{Yaoshiang2020ce}:
   
-\begin{equation} J_{cce}=-\frac {1}{M}\sum \limits _{k=1}^{K} \sum \limits _{m=1}^{M} {y_{m}^{k}\times \log \left ({h_{\theta }\left ({x_{m},k }\right) }\right)}
+\begin{equation} J_{cce}=-\frac {1}{M}\sum \limits _{k=1}^{K} \sum \limits _{m=1}^{M} {y_{m}^{k} \log \left ({h_{\theta }\left ({x_{m},k }\right) }\right)},
 \end{equation}
 
-kde $M$ je počet trénovacich dát, $K$ je počet tried, $y_{m}^{k}$ je požadovaná hodnota, $x_m$ je vstupná hodnota a $h_{\theta}$ je model s váhami neurónovej siete $\theta$.
+\noindent kde $M$ je počet trénovacich dát, $K$ je počet tried, $y_{m}^{k}$ je požadovaná hodnota, $x_m$ je vstupná hodnota a $h_{\theta}$ je model s váhami neurónovej siete $\theta$.
 
 \subsection{Spätná propagácia}
 
-Spätná propagácia je algoritmus, ktorý umožňuje vypočítanú chybu na výstupnej vrstve našej siete propagovať naspäť od výstupnej vrstvy až po vstupnú vrstvu.
-Vďaka tomuto algoritmu sme schopný vypočítať gradient vzhľadom na nami zvolenú
-stratovú funkciu, čo nám umožňuje určiť, ako malá zmena hodnoty neurónu ovplyvňuje
-výsledok siete. Na základe tejto informácie vieme aktualizovať parametre siete tak, aby
-sme minimalizovali stratovú funkciu. Proces spätnej propagácie zahŕňa niekoľko krokov:
+Spätná propagácia je algoritmus, ktorý umožňuje vypočítať chybu na výstupnej vrstve našej neurónovej siete a následne propagovať túto chybu naspäť od výstupnej vrstvy až po vstupnú vrstvu. Tento proces nám umožňuje vypočítať gradient stratovej funkcie vzhľadom k parametrov siete, a práve pomocou tohto gradientu využívame optimalizačné algoritmy, ako napríklad Gradient Descent, ktorý môžeme zadefinovať ako:
+
+\begin{equation}
+  \theta_{t+1} = \theta_{t} - \alpha \nabla J(\theta_{t}),
+\end{equation}
+
+\noindent kde $\theta_{t}$ je vektor parametrov siete v čase $t$, $\alpha$ je rýchlosť učenia a $\nabla J(\theta_{t})$ je gradient stratovej funkcie v čase $t$.
+
+Vďaka spätnej propagácii a Gradient Descentu sme schopní aktualizovať parametre siete tak, aby sme minimalizovali stratovú funkciu. Celý proces spätnej propagácie môže byť rozdelený do niekoľkých krokov:
 
 \begin{enumerate}
-  \item \textbf{Dopredny vypocet (Forward Pass)} – Vstupné dáta prejdú cez neurónovú sieť od vstupnej vrstvy až po výstupnú vrstvu. Počas tohto prechodu každý neurón v sieti vypočíta váhovanú sumu vstupov, aplikuje aktivačnú funkciu a prenáša svoj výstup na ďalšie neuróny (Obr. \ref{fig:backpropagation} modré šípky).
-  \item \textbf{Výpočet chyby} – Porovnajú sa výstupy siete s očakávanými hodnotami v trénovacích dátach a vypočíta sa chyba. Chyba je meraná pomocou tzv. stratovej funkcie, ktorá vyjadruje rozdiel medzi predpovedanými a skutočnými hodnotami.
-  \item \textbf{Spätný prechod (Backward Pass)} – Chyba sa potom „spätným prechodom“ prenáša späť cez sieť. Cieľom je určiť, akým spôsobom by sa mali upraviť váhy jednotlivých neurónov, aby sa minimalizovala chyba. Spätný prechod začína pri výstupnej vrstve a postupuje späť cez sieť až po vstupnú vrstvu (Obr. \ref{fig:backpropagation} červené šípky).
-  \item \textbf{Aktualizácia váh} – Počas spätného prechodu sa aktualizujú váhy na základe gradientu chyby voči váham. Gradient je vlastne derivácia stratovej funkcie vzhľadom k váham a vyjadruje, akým smerom a o akú veľkosť sa majú váhy aktualizovať.
-  \item \textbf{Opakovanie procesu} – Celý tento proces sa opakuje pre jednotlivé trénovacie vzorky v dátovej množine. Cieľom je minimalizovať chybu na trénovacích dátach a dosiahnuť lepšiu schopnosť generalizácie na nových, neznámich dátach.
+\item \textbf{Dopredný výpočet (Forward Pass)} – Vstupné dáta prechádzajú cez neurónovú sieť od vstupnej vrstvy až po výstupnú vrstvu. Každý neurón vypočíta váhovanú sumu vstupov, aplikuje aktivačnú funkciu a prenáša výstup na ďalšie neuróny (Obr. \ref{fig:backpropagation} modré šípky).
+\item \textbf{Výpočet chyby} – Porovnávajú sa výstupy siete s očakávanými hodnotami v trénovacích dátach a vypočíta sa chyba pomocou stratovej funkcie.
+\item \textbf{Spätný prechod (Backward Pass)} – Chyba sa prenáša späť cez sieť. Cieľom je určiť, akým spôsobom upraviť váhy neurónov, aby sa minimalizovala chyba. Spätný prechod začína pri výstupnej vrstve a postupuje späť až po vstupnú vrstvu (Obr. \ref{fig:backpropagation} červené šípky).
+\item \textbf{Gradient Descent} – Počas spätného prechodu sa aktualizujú váhy na základe gradientu chyby vzhľadom k váham. Gradient Descent je využitý na minimálnu stratovú funkciu tým, že upravuje váhy smerom a veľkosťou, ktoré minimalizujú chybu.
+\item \textbf{Opakovanie procesu} – Celý tento cyklus sa opakuje pre jednotlivé trénovacie vzorky v dátovej množine s cieľom minimalizovať chybu na trénovacích dátach a dosiahnuť lepšiu schopnosť generalizácie na nových, neznámich dátach.
 \end{enumerate}
+
+Takýto prístup integruje Gradient Descent do procesu spätnej propagácie, čo umožňuje efektívne aktualizovať váhy siete a dosiahnuť konvergenciu k optimálnym hodnotám parametrov.
 
 \begin{figure}[H]
 \centerline{\includegraphics[width=0.5\textwidth]{images/forward_back.png}}
-\caption{Princíp spätnej propagácie.}
+\caption{Princíp spätnej propagácie. Modré šípky – dopredný výpočet, červené šípky – spätný prechod.}
 \label{fig:backpropagation}
 \end{figure}
 
@@ -181,13 +187,7 @@ tenzor s rozmerom šírka × výška × hĺbka, kde hĺbka reprezentuje počet k
 Pomocou konvolučných neurónových sietí vieme priradiť dátam význam na základe
 vzorov, ktoré vieme získať aplikovaním matematickej operácie konvolúcia. Medzi vzory,
 ktoré môžeme získať, patria na vyšších úrovniach rôzne typy hrán a čím ideme vo
-vrstvách siete hlbšie, tým vieme získavať komplexnejšie vzory (oči, ucho...) viď Obr. \ref{fig:detekcia_vzorov}.
-
-\begin{figure}[H]
-\centerline{\includegraphics[width=0.5\textwidth]{images/detekcia vzorov.jpg}}
-\caption{Príklad detekcie vzorov v konvolučných neurónových sieťach \cite{donahue2017dance}.}
-\label{fig:detekcia_vzorov}
-\end{figure}
+vrstvách siete hlbšie, tým vieme získavať komplexnejšie vzory (oči, ucho...).
 
 Jednou z hlavných výhod týchto sietí je ekvivariancia voči translácii vstupného
 obrazu. Pri vhodne zvolenom postupe trénovania sietí je možné napr. pomocou augmentácie sieť natrénovať tak, aby sa výstup siete nemenil aj pri škálovaní a rotácii
@@ -203,12 +203,12 @@ vrstvami môžeme vidieť na Obr. \ref{fig:conv_multi_layer}.
 \label{fig:conv_multi_layer}
 \end{figure}
 
-\subsection{Konvolučná vrstva}
+\subsubsection{Konvolučná vrstva}
 
 Táto vrstva pracuje s matematickou operáciou, ktorú nazývame konvolúcia. Konvolúcia je operácia, ktorá pracuje s dvomi funkciami $f$ a $g$ a je definovaná nasledovne:
 
 \begin{equation}
-(f * g)(t) = \int_{-\infty}^{\infty} f(x)g(t - x) dx
+(f * g)(t) = \int_{-\infty}^{\infty} f(x)g(t - x) dx.
 \end{equation}
 
 V našom prípade si ešte zadefinujeme diskrétnu časť konvolúcie, nakoľko sieť trénujeme
@@ -216,14 +216,14 @@ na počítačoch, a tie ako vieme, pracujú s diskrétnymi hodnotami. Konvolúci
 diskrétnej verzii definovaná pre $f$ a $g$ nasledovne:
 
 \begin{equation}
-(f * g)(t) = \sum_{x=-\infty}^{\infty} f(x)g(t - x)
+(f * g)(t) = \sum_{x=-\infty}^{\infty} f(x)g(t - x).
 \end{equation}
 
 Ak pracujeme s obrazom, alebo v našom prípade s audiom vyobrazeným Melovym spektrogramom, tak za funkciu $f$ považujeme vstupný obraz a za funkciu $g$ jadro (taktiež aj kernel). V tomto prípade hovoríme o dvojrozmernej konvolúcii, ktorá
 je definovaná predpisom:
 
 \begin{equation}
-(f * g)(x, y) = \sum_{i=\infty}^{\infty} \sum_{j=\infty}^{\infty} f(i, j)g(x - i, y - j)
+(f * g)(x, y) = \sum_{i=\infty}^{\infty} \sum_{j=\infty}^{\infty} f(i, j)g(x - i, y - j).
 \end{equation}
 
 Výstupom 2 rozmernej konvolúcie je takzvaná mapa príznakov. Konvolučná vrstva znižuje šírku a výšku obrazu oproti vstupu. Grafickú reprezentáciu 2 rozmernej konvolúcie môžeme vidieť na Obr. \ref{fig:2d_konvolucia}.
@@ -239,7 +239,7 @@ príznakov s rozmerom 2×3.}
 Výstup konvolučnej vrstvy (mapa príznakov) je následne vstupom pre ďalšiu vrstvu a
 to konkrétne aktivačnú vrstvu.
 
-\subsection{Aktivačná vrstva}
+\subsubsection{Aktivačná vrstva}
 
 Úlohou aktivačnej vrstvy je pridávanie nelinearity na mapu príznakov
 z konvolučnej vrstvy za pomoci vhodnej aktivačnej funkcie. Pri konvolučných neurónových sieťach je najčastejšie ako aktivačná funkcia používaná ReLU (Rektifikovaná lineárna jednotka).
@@ -248,7 +248,7 @@ Ak by sme vynechali túto vrstvu (pridanie aktivačnej funkcie), tak by sa naša
 v priebehu trénovania nedokázala zlepšovať a stal by sa z nej iba lineárny klasifikátor.
 Výstup z aktivačnej vrstvy je následne vstupom pre pooling vrstvu.
 
-\subsection{Pooling vrstva}
+\subsubsection{Pooling vrstva}
 
 Problémom mapy príznakov z predchádzajúcich vrstiev je citlivosť na pozíciu príznakov
 v obraze. To znamená, že zmena veľkosti, otočenie alebo posun môžu výrazne zmeniť
@@ -328,10 +328,50 @@ globálneho priemerovacieho poolingu (GPP) môžeme vidieť na Obr. \ref{fig:gap
 
 Po aplikácii operácie flatten alebo globálneho priemerovacieho poolingu po poslednej pooling vrstve je tenzor prvého rádu vstupom pre plne prepojenú vrstvu.
 
-\subsection{Plne prepojená vrstva}
+\subsubsection{Plne prepojená vrstva}
 
 Poslednou fázou v konvolučných neurónových sieťach väčšinou býva plne prepojená
 vrstva. Ako už názov tejto vrstvy napovedá, všetky neuróny tejto vrstvy sú navzájom
 plne prepojené ako tomu je aj v klasických neurónových sieťach. Úlohou tejto vrstvy je
 na základe príznakov naučených z predchádzajúcich vrstiev zaradiť objekt, ktorý bol
 na vstupnom obraze do správnej výstupnej triedy.
+
+\subsection{Spracovanie zvukových súborov}
+
+Spracovanie zvukových súborov pre trénovanie konvolučných neurónových sietí, ako je napríklad rozpoznávanie reči, klasifikácia zvukových udalostí alebo predikcia úderov (beats), je kľúčovým krokom pri vytváraní efektívnych modelov. V našej práci budeme vytvárať dva modely – jeden pre predikciu úderov a druhý pre klasifikáciu zvukových udalostí. V tejto časti si zadefinujeme základné pojmy, ktoré budeme využívať pri spracovaní zvukových súborov.
+
+\subsubsection{Zvukový súbor}
+
+Zvukový súbor je súbor, ktorý obsahuje zvukové dáta. Zvukové dáta sú reprezentované ako časová postupnosť hodnôt, ktoré sú zvyčajne reprezentované ako 16-bitové čísla. Zvukové súbory môžu byť reprezentované v rôznych formátoch, ako napríklad WAV, MP3, EGG a podobne. V našej práci budeme pracovať so zvukovými súbormi vo formáte EGG.
+
+\subsubsection{Vzorkovacia frekvencia}
+
+Vzorkovacia frekvencia je počet vzoriek zvuku za sekundu. Vzorkovacia frekvencia je zvyčajne vyjadrená v Hertzoch (Hz). Vzorkovacia frekvencia je dôležitá pri spracovaní zvukových súborov, nakoľko určuje, koľko vzoriek zvuku bude zaznamenaných za sekundu. Čím vyššia je vzorkovacia frekvencia, tým vyššia je kvalita zvuku. V našej práci budeme pracovať so zvukovými súbormi, ktoré majú vzorkovaciu frekvenciu 22050 Hz.
+
+\subsubsection{Fourierova transformácia}
+
+Fourierova transformácia je matematická operácia, ktorá transformuje časovú postupnosť hodnôt na frekvenčnú doménu. Fourierova transformácia je definovaná predpisom \cite{davis2001fourier}:
+
+\begin{equation}
+  X(f) = \int_{-\infty}^{\infty} x(t) e^{-2\pi ift} dt,
+\end{equation}
+
+\noindent kde $X(f)$ predstavuje Fourierovu transformáciu funkcie $x(t)$ vzhľadom na frekvenciu $f$, $x(t)$ je pôvodná funkcia definovaná pre všetky hodnoty $t$ v rozsahu $(-\infty, \infty)$, kde $i$ je imaginárna jednotka.
+
+V praxi sa ale používa diskrétna Fourierova transformácia (DFT), ktorá je definovaná predpisom \cite{davis2001fourier}:
+
+\begin{equation}
+  X_k = \sum_{n=0}^{N-1} x_n e^{\frac{-2\pi ikn}{N}},
+\end{equation}
+
+\noindent kde $X_k$ predstavuje Fourierovu transformáciu funkcie $x_n$ vzhľadom na frekvenciu $k$, $x_n$ je pôvodná funkcia definovaná pre všetky hodnoty $n$ v rozsahu $0, 1, ..., N-1$, kde $N$ je počet vzoriek, $i$ je imaginárna jednotka.
+
+\subsubsection{Melov spektrogram}
+
+Melov spektrogram je vizualizácia spektrálnej obsahovej informácie zvuku v čase. Pre jeho vytvorenie sa používa Melova škála, pri ktorej sa zoberie cele frekvencne spekruma a rozdelí sa na $n$ rovnomerne rozdelených frekvenčných pásiem. Tieto pásmá sa následne pretransformujú na Melovu škálu. Výsledkom je spektrogram, ktorý má na x-ovej osi čas a na y-ovej osi frekvenciu. V našej práci budeme pracovať s Melovým spektrogramom, ktorý má 229 frekvenčných pásiem. Výsledný Melov spektrogram môžeme vidieť na Obr. \ref{fig:mel_spectrogram}.
+
+\begin{figure}[H]
+\centerline{\includegraphics[width=1\textwidth]{images/mel_spectrogram.png}}
+\caption{Ukážka Melovho spektrogramu.}
+\label{fig:mel_spectrogram}
+\end{figure}

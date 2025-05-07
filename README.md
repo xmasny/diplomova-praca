@@ -21,7 +21,7 @@ https://github.com/xmasny/beatsaber-map-generator (je potrebne požiadať o prí
 - Stiahnutie dát chartov a songov z verejného úložiska beatsaver.com pomocou python skriptu
 - Vyfiltrovanie nepouzitelnych zvukových a map súborov
 - Analýza a preprocess máp, uloženie základných objektov do osobitných súborov (kocky, steny a bomby)
-- Vygenerovanie mel spektrogramu (mels=128, hop length=512, sample rate=22050) (napr. song6_2dd81.npy)
+- Vygenerovanie mel spektrogramu (mels=229, hop length=512, sample rate=22050) (napr. song6_2dd81.npy)
 - Výpočet časovej pozície objektu na základe chart súboru
   - Prepočet beatu na sekundy a určenie najbližšieho framu
 - trenovanie modelu
